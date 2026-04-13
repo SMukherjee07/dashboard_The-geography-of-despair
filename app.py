@@ -18,7 +18,7 @@ Dependencies (requirements.txt):
     pandas>=2.0
     numpy>=1.24
 """
-
+st.write("App started")
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -290,6 +290,7 @@ state_abbrev = {
 }
 
 df["state_code"] = df["state"].map(state_abbrev)
+st.write("data loaded")
 # ─────────────────────────────────────────────────────────────
 # MASTHEAD
 # ─────────────────────────────────────────────────────────────
