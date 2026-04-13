@@ -844,6 +844,7 @@ with col_right:
 
 # ── CHART 5: DISTRIBUTION — How concentrated is the crisis ──
 # ── CHART 5: DISTRIBUTION — A crisis driven by extremes ──
+# ── CHART 5: DISTRIBUTION — STABLE VERSION ──
 st.markdown("""
 <div class="section-rq">RQ 5 — The distribution</div>
 <div class="section-title">A crisis driven by extremes</div>
@@ -854,38 +855,18 @@ st.markdown("""
 
 fig_dist = go.Figure()
 
-# Histogram (base layer)
+# Histogram ONLY (safe)
 fig_dist.add_trace(go.Histogram(
     x=df["od_rate_2022"],
     nbinsx=15,
     marker=dict(
-    color=PALETTE["coral"],
-    opacity=0.45,
-    line=dict(color=PALETTE["coral"], width=0.5)
-),
-    name="States",
+        color=PALETTE["coral"],
+        opacity=0.5,
+    ),
     hovertemplate="Rate: %{x:.1f}<br>States: %{y}<extra></extra>",
 ))
 
-# Smooth line (pseudo-density for visual shape)
-hist_data = np.histogram(df["od_rate_2022"], bins=15)
-counts = hist_data[0]
-bins = hist_data[1]
-bin_centers = (bins[:-1] + bins[1:]) / 2
-
-fig_dist.add_trace(go.Scatter(
-    x=bin_centers,
-    y=counts,
-    mode="lines",
-    line=dict(
-        color=PALETTE["red"],
-        width=2
-    ),
-    hoverinfo="skip",
-    showlegend=False,
-))
-
-# National average reference line
+# National average line
 nat_avg = df["od_rate_2022"].mean()
 
 fig_dist.add_vline(
@@ -895,19 +876,18 @@ fig_dist.add_vline(
     line_width=2,
 )
 
+# IMPORTANT: remove yref="paper" (causes frontend issues)
 fig_dist.add_annotation(
     x=nat_avg,
-    y=1.08,
-    yref="paper",
-    text=f"National avg: {nat_avg:.0f}",
+    y=df["od_rate_2022"].count() * 0.6,
+    text=f"Avg: {nat_avg:.0f}",
     showarrow=False,
     font=dict(size=10, color=PALETTE["ink"]),
 )
 
-# Layout polish
 fig_dist.update_layout(
     **BASE_LAYOUT,
-    height=320,
+    height=300,
     xaxis=dict(
         title=dict(
             text="Overdose deaths per 100,000",
@@ -919,28 +899,16 @@ fig_dist.update_layout(
         title="Number of states",
         gridcolor=PALETTE["rule"],
     ),
-    bargap=0.05,
 )
 
 st.plotly_chart(fig_dist, use_container_width=True, key="distribution")
 
-# Insight
 st.markdown("""
 <div class="insight-bar">
-Most states cluster between <strong>20–40 deaths per 100k</strong>, but a small number 
-of extreme outliers drive the national average upward. The distribution is 
-<strong>right-skewed</strong>, highlighting how concentrated the crisis truly is.
+The distribution is heavily right-skewed. Most states cluster in a mid-range, 
+while a small number of extreme outliers disproportionately drive the crisis.
 </div>
 """, unsafe_allow_html=True)
-fig_dist.add_annotation(
-    x=df["od_rate_2022"].max(),
-    y=0.9,
-    yref="paper",
-    text="Extreme outliers →",
-    showarrow=False,
-    font=dict(size=10, color=PALETTE["red"]),
-    align="right"
-)
 # ─────────────────────────────────────────────────────────────
 # FOOTER
 # ─────────────────────────────────────────────────────────────
