@@ -1,4 +1,10 @@
 import streamlit as st
+st.set_page_config(
+    page_title="The Geography of Despair",
+    page_icon="📍",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
 
 """
@@ -34,12 +40,6 @@ from plotly.subplots import make_subplots
 # PAGE CONFIG — must be first Streamlit call
 # ─────────────────────────────────────────────────────────────
 
-st.set_page_config(
-    page_title="The Geography of Despair",
-    page_icon="📍",
-    layout="wide",
-    initial_sidebar_state="collapsed",
-)
 
 # ─────────────────────────────────────────────────────────────
 # DESIGN SYSTEM
