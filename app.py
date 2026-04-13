@@ -1,3 +1,4 @@
+import streamlit as st
 """
 app.py — The Geography of Despair
 ===================================
