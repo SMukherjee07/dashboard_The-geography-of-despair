@@ -18,7 +18,17 @@ Dependencies (requirements.txt):
     pandas>=2.0
     numpy>=1.24
 """
+
 st.write("App started")
+
+import os
+st.write("Files in repo:", os.listdir())
+
+if os.path.exists("data"):
+    st.write("Data folder exists")
+    st.write("Data files:", os.listdir("data"))
+else:
+    st.write("No data folder found")
 import streamlit as st
 import pandas as pd
 import numpy as np
