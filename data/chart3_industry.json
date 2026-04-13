@@ -1,0 +1,46 @@
+[
+  {
+    "industry": "Technology",
+    "ratio": 623
+  },
+  {
+    "industry": "Consumer discretionary",
+    "ratio": 512
+  },
+  {
+    "industry": "Financials",
+    "ratio": 478
+  },
+  {
+    "industry": "Healthcare",
+    "ratio": 421
+  },
+  {
+    "industry": "Communication services",
+    "ratio": 389
+  },
+  {
+    "industry": "Industrials",
+    "ratio": 287
+  },
+  {
+    "industry": "Materials",
+    "ratio": 264
+  },
+  {
+    "industry": "Energy",
+    "ratio": 241
+  },
+  {
+    "industry": "Consumer staples",
+    "ratio": 218
+  },
+  {
+    "industry": "Real estate",
+    "ratio": 184
+  },
+  {
+    "industry": "Utilities",
+    "ratio": 147
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "anchors": [
+    {
+      "label": "1965",
+      "ceo": 1080000,
+      "worker": 51700,
+      "ratio": 21
+    },
+    {
+      "label": "2023",
+      "ceo": 16800000,
+      "worker": 57900,
+      "ratio": 290
+    }
+  ],
+  "ceo_pct_change": 1455.6,
+  "worker_pct_change": 12.0
+}

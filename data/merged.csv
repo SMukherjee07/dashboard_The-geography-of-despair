@@ -1,0 +1,51 @@
+state,od_rate_2022,poverty_rate,median_hh_income,income_k,od_rate_rounded,od_quartile
+West Virginia,80.9,16.8,55217,55.2,80.9,Severe
+Kentucky,52.8,16.1,60183,60.2,52.8,Severe
+Tennessee,50.7,14.0,64035,64.0,50.7,Severe
+Ohio,48.1,13.3,66990,67.0,48.1,Severe
+Louisiana,46.8,18.7,57852,57.9,46.8,Severe
+Maryland,46.3,9.3,98461,98.5,46.3,Severe
+Delaware,45.4,11.1,79325,79.3,45.4,Severe
+Pennsylvania,44.4,11.8,73170,73.2,44.4,Severe
+Indiana,43.8,12.3,67173,67.2,43.8,Severe
+Michigan,43.1,13.1,68505,68.5,43.1,Severe
+Missouri,42.2,12.8,65920,65.9,42.2,Severe
+North Carolina,39.3,13.3,66186,66.2,39.3,Severe
+Nevada,38.6,12.7,71646,71.6,38.6,Severe
+New Mexico,37.1,18.3,58722,58.7,37.1,High
+Arizona,36.8,13.1,72581,72.6,36.8,High
+New Hampshire,36.5,7.3,90845,90.8,36.5,High
+Alabama,35.7,15.7,59609,59.6,35.7,High
+South Carolina,35.4,14.4,63623,63.6,35.4,High
+Colorado,35.0,9.6,87598,87.6,35.0,High
+Virginia,34.9,10.0,87249,87.2,34.9,High
+Massachusetts,34.7,9.9,96505,96.5,34.7,High
+Connecticut,34.2,10.1,90213,90.2,34.2,High
+Washington,33.6,9.9,90325,90.3,33.6,High
+Rhode Island,33.4,11.2,81370,81.4,33.4,High
+Wisconsin,33.1,10.7,72458,72.5,33.1,High
+Illinois,32.8,11.8,78433,78.4,32.8,Moderate
+Vermont,32.5,10.4,74014,74.0,32.5,Moderate
+Oregon,32.1,11.9,76632,76.6,32.1,Moderate
+Maine,31.8,10.9,68251,68.3,31.8,Moderate
+New Jersey,31.5,9.7,97126,97.1,31.5,Moderate
+Georgia,31.2,13.5,71355,71.4,31.2,Moderate
+Arkansas,30.9,16.2,56335,56.3,30.9,Moderate
+Alaska,29.4,10.5,86370,86.4,29.4,Moderate
+Florida,29.1,12.9,67917,67.9,29.1,Moderate
+Montana,28.7,12.4,66341,66.3,28.7,Moderate
+Oklahoma,28.3,15.2,61364,61.4,28.3,Moderate
+California,27.8,12.1,91905,91.9,27.8,Moderate
+Mississippi,27.2,19.2,52985,53.0,27.2,Low
+Kansas,26.9,11.6,69747,69.7,26.9,Low
+New York,26.7,13.6,81386,81.4,26.7,Low
+Wyoming,25.9,10.7,72495,72.5,25.9,Low
+Hawaii,25.4,9.6,94814,94.8,25.4,Low
+Idaho,25.1,11.0,70214,70.2,25.1,Low
+Iowa,22.3,11.1,70571,70.6,22.3,Low
+North Dakota,21.7,10.8,73959,74.0,21.7,Low
+Minnesota,21.4,9.3,84313,84.3,21.4,Low
+South Dakota,20.8,12.3,69457,69.5,20.8,Low
+Utah,20.5,8.5,86833,86.8,20.5,Low
+Nebraska,19.8,10.4,71722,71.7,19.8,Low
+Texas,19.3,13.9,73035,73.0,19.3,Low

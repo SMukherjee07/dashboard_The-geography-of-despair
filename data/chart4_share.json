@@ -1,0 +1,62 @@
+[
+  {
+    "year": 1970,
+    "share": 62.5,
+    "change": -0.5
+  },
+  {
+    "year": 1975,
+    "share": 61.8,
+    "change": -1.2
+  },
+  {
+    "year": 1980,
+    "share": 60.2,
+    "change": -2.8
+  },
+  {
+    "year": 1985,
+    "share": 58.9,
+    "change": -4.1
+  },
+  {
+    "year": 1990,
+    "share": 57.4,
+    "change": -5.6
+  },
+  {
+    "year": 1995,
+    "share": 56.1,
+    "change": -6.9
+  },
+  {
+    "year": 2000,
+    "share": 53.8,
+    "change": -9.2
+  },
+  {
+    "year": 2005,
+    "share": 52.0,
+    "change": -11.0
+  },
+  {
+    "year": 2010,
+    "share": 51.3,
+    "change": -11.7
+  },
+  {
+    "year": 2015,
+    "share": 51.0,
+    "change": -12.0
+  },
+  {
+    "year": 2020,
+    "share": 50.8,
+    "change": -12.2
+  },
+  {
+    "year": 2023,
+    "share": 51.2,
+    "change": -11.8
+  }
+]
