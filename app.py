@@ -1,7 +1,6 @@
-import sys
 import streamlit as st
 
-st.write("Python version:", sys.version)
+
 """
 app.py — The Geography of Despair
 ===================================
